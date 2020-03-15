@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Righteous&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo{
+    font-family: 'Righteous', sans-serif;
+}
+
+#logofooter{
+    font-family: 'Righteous', sans-serif;
+    color: white;
+}
+
+#logofooter:hover{
+    font-family: 'Righteous', sans-serif;
+    color: white;
+}
+
+header{
+    background: grey;
+}
+
+.bgblack{
+    background: black;
+}
+
+nav{
+    background: black;
+}
+
+ul{
+    list-style: none;
+}
+
+footer div div div ul li a{
+    color: silver;
+}
+
+footer div div div ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background: black;
+}
+
+.presentation{
+    color: black;
+}
+
+.linkcontact{
+    text-decoration: none;
+    color: black;
+}
+
+.linkcontact:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+#endfooter{
+    color: grey;
+}

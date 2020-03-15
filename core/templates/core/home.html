@@ -1,0 +1,100 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block tittle %}
+  <title>Diego Trujillo - Developer</title>
+{% endblock tittle %}
+
+{% block contenido %}
+  <div class="container">
+    <div class="row" id="aboutme">
+        <div class="col-lg-6 col-md-12">
+          <div class="mx-auto p-5">
+            <img src="{% static 'core/img/Perfil.jpg' %}" class="img-fluid rounded-circle" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="presentation m-1" style="padding-top: 35%;">
+              <h3><b>Hello!</b></h3>
+              <h1 class="text-left text-uppercase"><b>I'm Diego Trujillo Pinto</b></h1>
+              <h2><b>Freelance Developer</b></h2>
+            </div>
+        </div>
+    </div>
+    <div id="service">
+      <div class="row">
+        <div class="col-lg-6 col-md-12" style="padding-top: 10%;">
+          <p class="text-justify"><b>I am a freelance developer. My specialty is python and I can build a web page thanks to the Django framework.</b></p>
+          <p class="text-justify"><b>But I can program in different languages. Like Java, C#, Javasvript.</b></p>
+          <div class="list-icon" style="padding-right: 10%;">
+            <img src="{% static 'core/img/python.png' %}" style="width: 50px;" alt="">
+            <img src="{% static 'core/img/django.png' %}" style="width: 50px;"  alt="">
+            <img src="{% static 'core/img/html5.png' %}" style="width: 60px;"  alt="">
+            <img src="{% static 'core/img/css3.png' %}" style="width: 50px;"  alt="">
+            <img src="{% static 'core/img/bootstrap.svg' %}" style="width: 50px;"  alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="mx-auto p-5">
+            <img src="{% static 'core/img/0.jfif' %}" class="img-fluid rounded" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <h3 class="text-center"><b>Portfolio</b></h3>
+      <div class="redman-gallery" 
+      data-redman-totalCount="4" 
+      data-redman-countPerPage="4" 
+      data-redman-countPerRow="2" 
+      data-redman-startHeight="250" 
+      data-redman-theme="dark" style="margin: auto;">
+        <img src="{% static 'core/img/none.png' %}" alt="image alt">
+        <img src="{% static 'core/img/none.png' %}" alt="image alt">
+        <img src="{% static 'core/img/none.png' %}" alt="image alt">
+        <img src="{% static 'core/img/none.png' %}" alt="image alt">
+      </div>
+    </div>
+    <br>
+    <div id="contact">
+      <div class="row m-1">
+        <div class="col-lg-6 col-md-12">
+          <form action="" class="border border-secondary p-3" >
+            <div class="form-group">
+              <label for="">Name:</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+            <label for="">Last Name:</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+            <label for="">Email:</label>
+            <input type="email" name="" id="" class="form-control">
+            </div>
+            <div class="form-group">
+            <label for="">Message:</label>
+            <input type="text" name="" id="" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Send!</button>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="contorno border border-secondary">
+            <div class="row p-5">
+              <h2 class="p-4" style="background: rgba(0, 0, 0, 0.144);">W</h2>
+              <h5 class="p-4"><a class="linkcontact" href="tel:+56963109551">+56963109551</a></h5>
+            </div>
+          </div>
+          <div class="contorno border border-secondary">
+            <div class="row p-5">
+              <h2 class="p-4" style="background: rgba(0, 0, 0, 0.144);">E</h2>
+              <h5 class="p-4"><a class="linkcontact" href="mailto:contact@dt-developer.com">contact@dt-developer.com</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock contenido %}
